@@ -2,11 +2,13 @@
 
 {% block content %}
 
-<h1>Princess {{name}}</h1>
-<form action="add" method="post">
+<h1>Hey! {{name}} Welcome to the Fitness Calculator </h1>
+
+<form action="bmi" method="post">
     {% csrf_token %}
-    Enter 1st number = <input type="text" ,  name = "num1"><br>
-    Enter 2nd number = <input type = "text" , name = "num2"> <br>
+    Enter Height in Feet = <input type="text" ,  name = "f1"><br>
+    Enter Height in Inches = <input type="text" ,  name = "i1"><br>
+    Enter Weight = <input type = "text" , name = "w"> <br>
     <input type ="submit">
 </form>
 
