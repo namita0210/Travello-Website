@@ -326,8 +326,8 @@
                             <a href="{% static '#' %}" class="prise">$500</a>
                         </div>
                         <div class="place_info">
-                            <a href="{% static 'destination_details.html'%}"><h3>California</h3></a>
-                            <p>United State of America</p>
+                            <a href="{% static 'destination_details.html'%}"><h3>{{dest1.name}}</h3></a>
+                            <p>{{dest1.description}}</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      <i class="fa fa-star"></i> 
@@ -335,11 +335,11 @@
                                      <i class="fa fa-star"></i> 
                                      <i class="fa fa-star"></i> 
                                      <i class="fa fa-star"></i>
-                                     <a href="{% static '#'%}">(20 Review)</a>
+                                     <a href="{% static '#'%}">{{dest1.rating}}</a>
                                 </span>
                                 <div class="days">
                                     <i class="fa fa-clock-o"></i>
-                                    <a href="{% static '#' %}">5 Days</a>
+                                    <a href="{% static '#' %}">{{dest1.days}}</a>
                                 </div>
                             </div>
                         </div>
