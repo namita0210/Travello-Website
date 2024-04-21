@@ -10,6 +10,7 @@ def index(request):
     dest1.description = 'The city that never sleeps'
     dest1.days = '7 days'
     dest1.rating = '5 star'
+    dest1.img='1.png'
 
     dest2 = Destination()
     dest2.name = 'Hyderabad'
@@ -25,6 +26,6 @@ def index(request):
 
     dests = [dest1,dest2,dest3]
 
-    return render(request, 'index.html' , {'dest1' : dests})
+    return render(request, 'index.html' , {'dests' : dests})
 
 
