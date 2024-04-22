@@ -8,3 +8,4 @@ class Destination:
     img : str
     days : str
     rating : str
+    offer :bool
