@@ -328,7 +328,11 @@
                         <div class="thumb">
                             <img src="{{baseUrl}}/{{dest.img}}" alt="">
                             <a href="{% static '#' %}" class="prise">$500</a>
+                            {% if dest.offer %}
+                            <div class='spec-offer'><p>Special Offer</p></div>
+                            {% endif %}
                         </div>
+                        
                         <div class="place_info">
                             <a href="{% static 'destination_details.html'%}"><h3>{{dest.name}}</h3></a>
                             <p>{{dest.description}}</p>
