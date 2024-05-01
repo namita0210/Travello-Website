@@ -59,8 +59,13 @@
                                             <li><a class="active" href="{% static 'index.html'%}">home</a></li>
                                             <li><a href="{% static 'about.html'%}">About</a></li>
                                             <li><a class="" href="{% static 'travel_destination.html'%}">Destination</a></l/li>
+                                            {% if user.is_authenticated %}
+                                            <li>Hello , {{user.first_name}} </li>
+                                            <li><a href = "accounts/logout">Login</a></li>
+                                            {% else %}
                                             <li><a href = "accounts/register">Register</a></li>
                                             <li><a href = "accounts/login">Login</a></li>
+                                            {% endif %}
                                         </ul>
                                     </nav>
                                 </div>
